@@ -32,6 +32,11 @@ $pi = 3.14159;
 
 $formatter = new NumberFormatter($locale, NumberFormatter::DECIMAL);
 $formatter->setAttribute(NumberFormatter::FRACTION_DIGITS, 5);
+
+$timestamp = strtotime('21 September 1992');
+
+$date_formatter = new IntlDateFormatter($locale, null, null);
+$date_formatter->setPattern('EEE, d MMM Y');
 ?>
 <!DOCTYPE html>
 <html lang="<?= str_replace('_', '-', $locale) ?>">
@@ -49,6 +54,7 @@ $formatter->setAttribute(NumberFormatter::FRACTION_DIGITS, 5);
     <p><?= sprintf($translator->gettext("Welcome, %s"), $name) ?></p>
     <p><?= sprintf($translator->ngettext("You have %d message", "You have %d messages", $count), $count) ?></p>
     <p><?= $formatter->format($pi) ?></p>
+    <p><?= $date_formatter->format($timestamp) ?></p>
 </body>
 
 </html>
