@@ -6,6 +6,11 @@ The terms are frequently abbreviated to the numeronyms **i18n** (where 18 stands
 
 Some companies, like IBM and Oracle, use the term _globalization_, **g11n**, for the combination of _internationalization and localization_. Also known as "_glocalization_".
 
+## ⚡PHP Extensions Required
+
+🎯 **php_intl**<br>
+🎯 **php_gettext**
+
 ## ⚡[ipinfo.io](https://ipinfo.io/)
 
 The Trusted Source for IP Address Data
