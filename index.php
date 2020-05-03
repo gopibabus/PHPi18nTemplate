@@ -28,6 +28,10 @@ if ($locale === null) {
 $translator = new Translator("locales/$locale/LC_MESSAGES/messages.mo");
 $name = 'Gopibabu';
 $count = 1;
+$pi = 3.14159;
+
+$formatter = new NumberFormatter($locale, NumberFormatter::DECIMAL);
+$formatter->setAttribute(NumberFormatter::FRACTION_DIGITS, 5);
 ?>
 <!DOCTYPE html>
 <html lang="<?= str_replace('_', '-', $locale) ?>">
@@ -44,6 +48,7 @@ $count = 1;
     <p><?= $translator->gettext('This is other text from English') ?></p>
     <p><?= sprintf($translator->gettext("Welcome, %s"), $name) ?></p>
     <p><?= sprintf($translator->ngettext("You have %d message", "You have %d messages", $count), $count) ?></p>
+    <p><?= $formatter->format($pi) ?></p>
 </body>
 
 </html>
