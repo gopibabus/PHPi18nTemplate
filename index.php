@@ -55,6 +55,8 @@ $date_formatter->setPattern('EEE, d MMM Y');
     <p><?= sprintf($translator->ngettext("You have %d message", "You have %d messages", $count), $count) ?></p>
     <p><?= $formatter->format($pi) ?></p>
     <p><?= $date_formatter->format($timestamp) ?></p>
+
+    <?php require "content/body.$locale.html" ?>
 </body>
 
 </html>
