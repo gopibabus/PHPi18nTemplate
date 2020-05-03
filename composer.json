@@ -1,0 +1,20 @@
+{
+    "name": "srungavg/ph-pi18n-template",
+    "description": "This project is to learn how I can internationalize",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Gopibabu Srungavarapu",
+            "email": "s.gopibabu@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App/"
+        }
+    },
+    "require": {
+        "ipinfo/ipinfo": "^1.1",
+        "phpmyadmin/motranslator": "^5.0"
+    }
+}
