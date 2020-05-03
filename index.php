@@ -38,10 +38,12 @@ $timestamp = strtotime('21 September 1992');
 $date_formatter = new IntlDateFormatter($locale, null, null);
 $date_formatter->setPattern('EEE, d MMM Y');
 
-$filename = "content/body.$locale.html";
+$filename = "content/body.$locale.md";
 
 if (is_readable($filename)) {
+    $parser = new Parsedown;
     $content = file_get_contents($filename);
+    $content = $parser->text($content);
 } else {
     $content = "Content for $locale not found";
 }

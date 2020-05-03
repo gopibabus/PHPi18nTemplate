@@ -15,6 +15,7 @@
     },
     "require": {
         "ipinfo/ipinfo": "^1.1",
-        "phpmyadmin/motranslator": "^5.0"
+        "phpmyadmin/motranslator": "^5.0",
+        "erusev/parsedown": "^1.7"
     }
 }
