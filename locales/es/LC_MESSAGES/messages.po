@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-02 19:53-0500\n"
-"PO-Revision-Date: 2020-05-02 19:54-0500\n"
+"POT-Creation-Date: 2020-05-02 21:54-0500\n"
+"PO-Revision-Date: 2020-05-02 21:55-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -14,29 +14,30 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _gettext\n"
 "X-Poedit-SearchPath-0: index.php\n"
+"X-Poedit-SearchPath-1: about.php\n"
 
-#: index.php:38
+#: index.php:12
 msgid "Locale Demo"
 msgstr "Locale Demo Spanish"
 
-#: index.php:42
+#: index.php:19
 msgid "i18n Usage"
 msgstr "i18n Usage Spanish"
 
-#: index.php:43
+#: index.php:22
 msgid "i18n usage in php web applications"
 msgstr "i18n usage in php web applications Spanish"
 
-#: index.php:44
+#: index.php:25
 msgid "This is other text from English"
 msgstr "This is other text from Spanish"
 
-#: index.php:45
+#: index.php:28
 #, php-format
 msgid "Welcome, %s"
 msgstr "Welcome in Spanish, %s"
 
-#: index.php:46
+#: index.php:31
 #, php-format
 msgid "You have %d message"
 msgid_plural "You have %d messages"
