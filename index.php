@@ -37,6 +37,14 @@ $timestamp = strtotime('21 September 1992');
 
 $date_formatter = new IntlDateFormatter($locale, null, null);
 $date_formatter->setPattern('EEE, d MMM Y');
+
+$filename = "content/body.$locale.html";
+
+if (is_readable($filename)) {
+    $content = file_get_contents($filename);
+} else {
+    $content = "Content for $locale not found";
+}
 ?>
 <!DOCTYPE html>
 <html lang="<?= str_replace('_', '-', $locale) ?>">
@@ -55,8 +63,8 @@ $date_formatter->setPattern('EEE, d MMM Y');
     <p><?= sprintf($translator->ngettext("You have %d message", "You have %d messages", $count), $count) ?></p>
     <p><?= $formatter->format($pi) ?></p>
     <p><?= $date_formatter->format($timestamp) ?></p>
+    <?= $content ?>
 
-    <?php require "content/body.$locale.html" ?>
 </body>
 
 </html>
