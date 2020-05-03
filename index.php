@@ -67,6 +67,8 @@ if (is_readable($filename)) {
     <p><?= $date_formatter->format($timestamp) ?></p>
     <?= $content ?>
 
+    <img src="/images/stop_<?= substr($locale, 0, 2) ?>.png">
+
 </body>
 
 </html>
