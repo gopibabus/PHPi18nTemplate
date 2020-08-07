@@ -1,4 +1,4 @@
-# 🔥i18n (Internationalization)
+![php i18n Template](./images/banner.png)
 
 The terms are frequently abbreviated to the numeronyms **i18n** (where 18 stands for the number of letters between the first i and the last n in the word _internationalization_), a usage coined at Digital Equipment Corporation in the 1970s.
 
